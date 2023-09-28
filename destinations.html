@@ -1,0 +1,126 @@
+
+
+<html>
+<head>
+  <style>
+body {
+      background-image: url("bg..jpg"); /* Replace "background-image.jpg" with the path to your desired background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    .parent {
+      display: flex;
+      gap: 20px; /* Adjust the gap value as per your desired gap between images */
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .image img {
+      max-width: 50%;
+      max-height: 200px; /* Adjust the max-height value as per your desired image height */
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .image .content {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .links-container a {
+      font-size: 20px;
+      font-family: satisfy;
+    }
+
+    /* Background shades for different cards */
+    .sunny-card {
+      background-color:rgb(216, 220, 153); /* Adjust the background color as desired */
+    }
+
+    .rainy-card {
+      background-color:rgb(246, 187, 217); /* Adjust the background color as desired */
+    }
+
+    .winter-card {
+      background-color: rgb(105, 190, 216); /* Adjust the background color as desired */
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>BEST TIME TO VISIT</h1>
+  </center>
+  <div class="parent">
+    <div class="image sunny-card">
+      <img src="image1.jpeg" alt="Image 1">
+      <h3 style="font-family:cursive;text-align:24px">SUNNY</h3>
+      <center>
+        <div class="links-container">
+          <a href="tajmahal des.html">Taj Mahal-Uttarpradesh</a>
+          <a href="puri des.html">puri jagannath-odisha</a>
+          <a href="badrinath des.html">Badrinath-Uttarkhand</a>
+          <a href="ooty des.html">Ooty-Tamil Nadu</a>
+          <a href="goa des.html">Goa beach-Goa</a>
+	  <a href="kasi des.html">Kasi-Uttarpradesh</a>
+        </div>
+      </center>
+    </div>
+
+    <div class="image rainy-card">
+      <img src="image2.jpeg" alt="Image 2">
+      <div class="content">
+        <center>
+          <h3 style="font-family:cursive;text-align:24px">RAINY</h3>
+        </center>
+        <div class="links-container">
+          <a href="konark des.html">Konarksuntemple-odisha</a>
+          <a href="golden des.html">Golden Temple-Punjab</a>
+          <a href="ujjain des.html">Ujjain Mahakaleswar-Madhyapradesh</a>
+          <a href="munnar des.html">munnar-kerala</a>
+          <a href="kodaikanal des.html">Kodaikanal-Tamil Nadu</a>
+	  <a href="lotus des.html">Lotus Temple-Delhi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="image winter-card">
+      <img src="image3.jpeg" alt="Image 3">
+      <div class="content">
+        <center>
+          <h3 style="font-family:cursive;text-align:24px">WINTER</h3>
+        </center>
+        <center>
+          <div class="links-container">
+            <a href="rameswaram des.html">Rameswaram-Tamilnadu</a>
+            <a href="tirupathi des.html">Tirupathi-Andrapradesh</a>
+            <a href="madhurai des.html">Madurai-Tamil Nadu</a>
+	    <a href="india gate des.html">India Gate-Delhi</a>
+            <a href="mysore des.html">Mysore palace-Karnataka</a>
+            <a href="kedar des.html">Kedarnath temple-Uttarkhand</a>
+          </div>
+        </center>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

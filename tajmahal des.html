@@ -1,0 +1,406 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tajmahal</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="icon"
+        href="https://www.freeiconspng.com/thumbs/travel-icon-png/plane-travel-flight-tourism-travel-icon-png-10.png">
+    <title>JustTravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+#service{
+  width: auto;
+  text-align: center;
+  padding-bottom: 3rem;
+}
+.overlaybg{
+  background: url("green.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 92%;
+  border-radius: 15px;
+  height: 65vh;
+  margin: 25px auto;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width:930px){
+
+  .overlaybg{
+      display: none;
+  }
+
+  .inner-container{
+      width: 90%;
+      transform: scale(0.8);
+      margin: 1rem;
+  }
+
+  .inner-container:hover{
+    transform: scale(1);
+  }
+
+  .sv-content{
+      padding: 0;
+      padding-bottom: 1rem;
+  }
+}
+.inner-container:hover{
+  position: relative;
+  transform: scale(1.04);
+  transition: all 400ms ease-in
+}
+
+.container1{
+  display: inline;
+  width: 90%;
+  background-color: white;
+  margin: auto;
+  float: inline-start;
+}
+.inner-container{
+  text-align: center;
+  display: inline-block;
+  padding: 0.1rem;
+  position: relative;
+  background-color: white;
+  z-index: 2;
+  width: 27%;
+  box-shadow: 0px 10px 30px 0px rgb(138 185 45 / 20%);
+  border-radius: 92px;
+  margin: -200px 1rem 1rem 1rem;
+  transform: scale(1);
+}
+.sv-icon{
+  color: brown;
+  width: fit-content;
+  margin: auto;
+  padding: 1.3rem;
+}
+
+.sv-head{
+  font-size: 1.5rem;
+  font-family: 'Signika Negative', sans-serif;
+  color: darkgreen;
+  width: fit-content;
+  margin: auto;
+  height: 5.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.sv-content{
+  font-size: 1rem;
+  color: black;
+  font-family: cursive;
+  font-weight: 500;
+  width: 90%;
+  padding: 10% 5%;
+  margin: auto;
+}
+.cus1{
+  width: fit-content;
+  margin: auto;
+  padding: 5rem 0 0 0;
+  font-size: 3.5rem;
+  font-family:'Quintessential',cursive;
+  color: white;
+  text-align: center;
+}
+
+.cus2{
+  width: fit-content;
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(157 142 142);
+}
+.faqhead{
+  font-size: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  font-family:castellar;
+}
+.nv:hover{
+  color: rgb(224, 146, 19);
+  border-radius: 0.5rem;
+}
+/* horizontal slides*/
+body{
+background-color:white;
+}
+.gallery{
+width:900px;display:flex;
+overflow-x:scroll;
+}
+.gallery div{
+width:100%;
+display:grid;
+grid-template-columns:auto auto auto;
+grid-gap:20px;
+padding:10px;
+flex:none;
+}
+.gallery div img{
+width:100%;
+transition:transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+display:none;
+}
+.gallery-wrap{
+ display:flex;
+align-items:center;
+justify-content:center;
+margin:10% auto;
+}
+#backBtn, #nextBtn{
+width:50px;
+cursor:pointer;
+margin:40px;
+}
+.gallery div img:hover{
+filter:grayscale(0);
+cursor:pointer;
+transform:scale(1.1);
+
+}
+/* auto small photo*/
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+#header{
+position:relative;
+width:100%;
+height:100vh;
+background:url("tajmahal.jpeg");
+background-size:100%;
+background-position:center;
+background-attachment:fixed;
+}
+section{
+padding:100px;
+color:#111;
+}
+section h2{
+font-size:2.5em;
+margin-bottom:10px;
+}
+section p{
+font-size:1.2em;
+}
+/* navbar */
+.navbar {
+    overflow: hidden;
+    background-color:;
+    position: fixed;
+    top: 0px;
+    color: black;
+    width: 100%;
+    display: flex;
+    /* Align items to the right side */
+}
+
+.navbar a {
+    display: block;
+    color: white;
+
+border-radius:40%;
+    text-align: center;
+    padding: 1px 4px;
+    text-decoration: none;
+    font-size: 32px;
+    font-family: cursive;
+    margin-left: 20px; /* Add some spacing between links */
+}
+
+.active {
+    background-color: pink;
+    font-family: cursive;
+}
+.button {
+  display: inline-block;
+  padding: 15px 40px;
+  text-decoration: none;
+  background-color: pink; /* Set your desired background color */
+  color: brown; /* Set the text color */
+  border-radius: 45px;
+font-family:castellar;
+}
+
+.button:hover {
+  background-color: #ff6347; /* Set the background color for hover state */
+}
+
+
+</style>
+
+<body>
+<div id="header"></div>
+<div class="navbar">
+<a href="#" style="font-family: Brush Script MT, cursive;color:black"><img src="l9.png" alt="logo" height="70px" width="49px">Happy Trip</a>
+</div>
+
+<section>
+<center>
+<h1 style="font-size:50px;font-family:castellar"><b>TAJ MAHAL</b></h1>
+</center>
+<h2>
+About Tajmahal</h2><p>
+The Taj Mahal is an ivory-white marble mausoleum on the right bank of the river Yamuna in Agra, Uttar Pradesh, India. It was commissioned in 1631 by the fifth Mughal emperor, Shah Jahan (r. 1628–1658) to house the tomb of his favourite wife, Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The tomb is the centrepiece of a 17-hectare (42-acre) complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall. Taj Mahal attracts more than 6 million visitors a year,[3] and in 2007 it was declared a winner of the New 7 Wonders of the World (2000–2007) initiative.
+Construction of the mausoleum was essentially completed in 1643, but work continued on other phases of the project for another 10 years. The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around ₹32 million, which in 2020 would be approximately ₹30 billion.</p>
+</section>
+<div class="w3-container">
+  <center><h2 style="font-size:40px">NEAR BY BEST PLACES TO VISIT</h2>
+  <p><h4>Nice places to enjoy with friends and family..<h4></p></center>
+</div>
+<body>
+<div class="gallery-wrap">
+ <img src="left.png"  id="backBtn">
+<div class="gallery">
+   <div>
+<span><img src="taj11.jpeg" height="300px" width="300px"></span>
+<span><img src="taj12.jpeg" height="300px" width="300px"></span>
+<span><img src="taj13.jpeg" height="300px" width="300px"></span>
+
+    </div>
+<div>
+<span><img src="taj14.jpeg" height="300px" width="300px"></span>
+<span><img src="taj15.jpeg" height="300px" width="300px"></span>
+<span><img src="taj16.jpeg" height="300px" width="300px"></span>
+
+    </div>
+  </div>
+ <img src="right.png"  id="nextBtn">
+</div>
+ 
+<center>
+<h1 style="border-radius:190px;">
+To find the location in maps click below..</h1><div class="sv-icon"><i class="fas fa-map-marker-alt fa-3x"></i></div>
+<div>
+<a href="taj loc.html" class="button"><b>LOCATION</b></a></div>
+</center>
+<br>
+<br>
+
+<div>
+        <div id="service">
+            <div class="faqhead" style="padding-bottom: 0;"><b><i>TRANSPORT SERVICES</i></b></div>
+            <div class="overlaybg">
+                <div class="cus1">TRANSPORT FACILITIES TO TAJMAHAL.
+                </div>
+            </div>
+            <div class="container1">
+                <div class="inner-container">
+                    <div class="sv-head">Airport</div>
+                    <div class="sv-icon"><i class="fas fa-plane fa-3x"></i></div>
+                    <div class="sv-content" style="font-size:20px">Around 10 kms from agra airport
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="inner-container">
+                    <div class="sv-head">Railway Station</div>
+                    <div class="sv-icon"><i class="fas fa-train fa-3x"></i></div>
+                    <div class="sv-content" style="font-size:20px">Around 10 kms from Agra cantt.railway station.
+                        upto you.</div>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="inner-container">
+                    <div class="sv-head">Bus Stand</div>
+                    <div class="sv-icon"><i class="fas fa-bus fa-3x"></i></div>
+                    <div class="sv-content" style="font-size:20px">Around 6 kms from idgah bus stand.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+ let scrollContainer = document.querySelector(".gallery");
+  let backBtn = document.getElementById("backBtn");
+  let nextBtn = document.getElementById("nextBtn");
+
+  scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+  });
+
+  backBtn.addEventListener("click", () => {
+    scrollContainer.scrollLeft -= scrollContainer.offsetWidth; // Scroll by the width of the container
+  });
+
+  nextBtn.addEventListener("click", () => {
+    scrollContainer.scrollLeft += scrollContainer.offsetWidth; // Scroll by the width of the container
+  });
+const bg=document.getElementById('header');
+window.addEventListener('scroll',function(){
+bg.style.backgroundSize=100 - +window.pageYOffset/12+'%';
+bg.style.opacity=1 - +window.pageYOffset/700+'';
+
+})
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+
+
+</script>
+
+</body>
+</html>

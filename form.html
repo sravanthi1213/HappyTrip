@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <style>
+        /* Styles for the transparent navbar */
+       .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  justify-content: right; /* Center-align the buttons */
+  z-index: 999;
+}
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        /* Other styles from your existing code */
+        .container {
+            max-width: 500px;
+            width: 100%;
+            margin: 20px auto;
+            padding: 30px;
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.12);
+            border-radius: 10px;
+        }
+
+        .container .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .container .for {
+            width: 100%;
+        }
+
+        .container .for .input_field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .container .for .input_field label {
+            width: 200px;
+        }
+
+        input {
+            border: 2px solid black;
+        }
+
+        .button {
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            width: 100px;
+            font-size: 20px;
+            margin-top: 2%;
+            background-color: rebeccapurple;
+        }
+
+        .container .hi {
+            display: inline-flex
+        }
+
+        .container .hi1 {
+            display: inline-flex
+        }
+    </style>
+</head>
+
+<body style="background-image: url('http://orig14.deviantart.net/af5c/f/2009/332/0/4/feedback_02_by_skybase.jpg');background-repeat:no-repeat;background-size:cover;">
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="search.jsp">Contact </a></li>
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+           
+        </ul>
+    </div>
+
+    <div class="container" style="background-color:white;margin-left:470px;margin-top:80px;height:550px">
+        <div class="title">
+            <h2 style="color:rgb(230, 35, 35)">Register</h2>
+        </div>
+        <form name="f1" action="./RegisterServlet" method="post">
+            <div class="for">
+                <div class="input_field">
+                    <label>
+                        <h3 style="font-size: 20px;"> Name</h3>
+                    </label>
+                    <input type="text" class="input" placeholder="Name " name="username"
+                        style="width: 40%;padding: 5px;height:30px;border-radius: 15px;" required>
+                </div>
+                <div class="input_field">
+                    <label>
+                        <h3 style="font-size: 20px;"> Email</h3>
+                    </label>
+                    <input type="text" class="input" placeholder=" xxxxxxx@gmail.com" name="email"
+                        style="width: 40%;height:30px;padding: 5px;border-radius: 15px;" required>
+                </div>
+<div class="input_field">
+                    <label>
+                        <h3 style="font-size: 20px;">contact</h3>
+                    </label>
+                    <input type="text" class="input" placeholder="mobile number" name="contact"
+                        style="width: 40%;height:30px;padding: 5px;border-radius: 15px;" required>
+                </div>
+    
+                <div class="input_field">
+                    <label>
+                        <h3 style="font-size: 20px;"> Destination</h3>
+                    </label>
+                    <input type="text" class="input" placeholder="Destination name" name="destiny"
+                        style="width: 40%;height:30px;padding: 5px;border-radius: 15px;" required>
+                </div>
+ 
+                <div class="input_field">
+                    <label>
+                        <h3 style="font-size: 20px;">About me</h3>
+                    </label>
+                    <textarea rows="5" cols="27" name="feed"
+                        style="border-radius:10px;border:inset 2px black"></textarea Required>
+                </div>
+
+                <div style="padding-top:5px;">
+                    <center>
+                        <input type="submit" value="SEND"
+                            style="color:white;background-color: brown;border:none;width:100px;height:40px"
+                            class="button">
+                    </center>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

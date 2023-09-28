@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guides</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 500px;
+    }
+
+    .swiper-slide {
+      width: 350px;
+      height: 500px;
+      margin: 0 15px;
+      box-shadow: 5px 5px 20px black;
+      overflow: hidden;
+      position: relative;
+      border-radius: 5px;
+    }
+
+    img {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .intro {
+      height: 170px;
+      padding: 6px;
+      box-sizing: border-box;
+      position: absolute;
+      bottom: 0;
+      background: rgba(27, 27, 27, 0.5);
+      color: white;
+      transition: 0.5s;
+      width: 100%;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    h4 {
+      margin: 10px;
+      font-size: 24px;
+    }
+
+    .p {
+      font-size: 14px;
+      margin: 10px;
+    }
+
+    .swiper-button-prev.swiper-previous,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    .swiper-button-prev.swiper-previous {
+      left: 10px;
+    }
+
+    .swiper-button-next {
+      right: 10px;
+    }
+  </style>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Guides</title>
+    <style>
+      
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+  
+
+    body {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #B2FFFF;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+
+
+
+
+        .container {
+            display: flex;
+        }
+
+       
+
+  
+    .card {
+        height: 500px;
+        margin: 20px;
+        padding: 20px;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5); /* Example color (black with transparency) */
+    }
+
+
+.rating {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .rating span {
+        color: gold;
+        font-size: 24px;
+    }
+
+
+        img {
+            height: 500px;
+            width: 350px;
+            border-radius: 5px;
+        }
+
+        .intro {
+            height: 170px;
+            width: 350px;
+            padding: 6px;
+            box-sizing: border-box;
+            position: absolute;
+            bottom: 0px;
+            background: rgb(27, 27, 27, 0.5);
+            color: white;
+            transition: 0.5s;
+        }
+
+        h4 {
+            margin: 10px;
+            font-size: 40px;
+        }
+
+        .p {
+            font-size: 20px;
+            margin: 20px;
+        }
+
+        .card:hover .intro {
+            bottom: -170px;
+        }
+
+        .card:hover .p {
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="img1.jpeg" alt="Guide1">
+            <div class="intro">
+                <b>
+                    <h4>Lovely</h4>
+                </b>
+<div class="rating">
+        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+    </div>
+                <p>The <span>Lovely</span> "I had an amazing experience using this HappyTrip website. The website was user-friendly, allowing me to easily browse and plan "
+          
+            </div>
+        </div>
+        <div class="card">
+            <img src="img2.jpeg" alt="Guide2">
+            <div class="intro">
+                <b>
+                    <h4>Rosey</h4>
+                </b>
+<div class="rating">
+        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+    </div>
+                <p>The <span>Rosey</span> . The customer service was outstanding, providing prompt assistance and ensuring a smooth travel planning process."
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img3.jpeg" alt="Guide3">
+            <div class="intro">
+                <b>
+                    <h4>Jack</h4>
+                </b>
+<div class="rating">
+        <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+    </div>
+                <p>The <span>Jack</span> "While the HappyTrip website had a user-friendly interface and the website is fantastic, offering a wide range of options </p>
+            </div>
+        </div>
+        
+        </div>
+</div>
+</body>
+</html>
+
+
+
